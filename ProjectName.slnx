@@ -1,4 +1,21 @@
 <Solution>
+  <Folder Name="/dreams/decisions/">
+    <File Path="dreams/decisions/.gitkeep" />
+  </Folder>
+  <Folder Name="/dreams/examples/">
+    <File Path="dreams/examples/.gitkeep" />
+  </Folder>
+  <Folder Name="/dreams/research/">
+    <File Path="dreams/research/.gitkeep" />
+  </Folder>
+  <Folder Name="/dreams/specifications/">
+    <File Path="dreams/specifications/.gitkeep" />
+  </Folder>
+  <Folder Name="/Solution Items/" />
+  <Folder Name="/dreams/">
+    <File Path="dreams/README.md" />
+   
+  </Folder>
   <Folder Name="/src/">
     <Project Path="src/ProjectName/ProjectName.csproj" />
   </Folder>
