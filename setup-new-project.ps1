@@ -133,19 +133,25 @@ foreach ($folder in $cleanFolders) {
 
 Write-Host "`n📝 Step 5: Verifying solution..." -ForegroundColor Yellow
 
-$solutionFile = Get-ChildItem -Filter "*.sln" | Select-Object -First 1
-if ($solutionFile) {
+$solutionFile = Get-ChildItem -Filter "*.sln*" | Select-Object -First 1
+if ($solutionFile)
+{
 	Write-Host "  ✅ Solution file: $($solutionFile.Name)" -ForegroundColor Green
 
 	# Try to build
 	Write-Host "`n  🔨 Building solution..." -ForegroundColor Cyan
 	$buildResult = & dotnet build $solutionFile.FullName 2>&1
-	if ($LASTEXITCODE -eq 0) {
+	if ($LASTEXITCODE -eq 0)
+	{
 		Write-Host "  ✅ Build successful!" -ForegroundColor Green
-	} else {
+	}
+	else
+	{
 		Write-Host "  ⚠️  Build had warnings/errors (review output above)" -ForegroundColor Yellow
 	}
-} else {
+}
+else
+{
 	Write-Host "  ⚠️  No solution file found" -ForegroundColor Yellow
 }
 
