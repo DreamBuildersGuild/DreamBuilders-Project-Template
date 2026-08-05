@@ -1,0 +1,35 @@
+<Project>
+	<PropertyGroup>
+		<!-- Common properties for all projects -->
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+		<WarningsAsErrors></WarningsAsErrors>
+
+		<!-- Code analysis -->
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<AnalysisLevel>latest</AnalysisLevel>
+		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+
+		<!-- Package metadata (update for your project) -->
+		<Authors>DreamBuildersGuild</Authors>
+		<Company>DreamBuildersGuild</Company>
+		<Copyright>Copyright © DreamBuildersGuild</Copyright>
+
+		<!-- Strong naming and assembly versioning -->
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
+
+	<!-- SonarAnalyzer settings for cognitive complexity -->
+	<PropertyGroup>
+		<CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Global analyzer packages (applies to all projects) -->
+		<!-- SonarAnalyzer is added per-project in .csproj to allow flexibility -->
+	</ItemGroup>
+</Project>
